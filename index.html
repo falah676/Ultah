@@ -70,12 +70,12 @@
         <p id="name">Mariam</p>
       </div>
       <div class="middle">
-        <h1>COMING SOON</h1>
+        <h1 id="coming">COMING SOON</h1>
         <hr />
         <p id="demo"></p>
       </div>
       <div class="bottomleft">
-        <p>Please Waitt...</p>
+        <p id="visible">Please Waitt...</p>
       </div>
     </div>
     <figure></figure>
@@ -84,7 +84,7 @@
 
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Oct 27, 2022 01:00:00").getTime();
+      var countDownDate = new Date("Oct 27, 2022 07:06:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function () {
@@ -107,6 +107,8 @@
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("demo").innerHTML = '<a href = "ultah.html"  target = "_blank" class = "link">Click Me</a>';
+          document.getElementById("coming").innerHTML = "Happy Birthaday!!";
+          document.getElementById("visible").style.display = "none";
         }
       }, 1000);
     </script>
